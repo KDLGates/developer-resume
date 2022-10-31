@@ -116,7 +116,7 @@ export default function Home() {
                 A lifelong technologist and lover of Computer Science, at last
                 working hard on breaking into development. Current focus is on
                 breaking through the rust and re-learning the modern web via the
-                MERN framework, and how to tie many hours in backend programming and
+                MERN stack, and how to tie many hours in backend programming and
                 education into practical software developent to prove that I can
                 provide value.
               </p>
@@ -182,7 +182,7 @@ export default function Home() {
                   <p className="education-school-name">
                     University of South Florida
                   </p>
-                  <p className="educationp-time-period">2016-2018</p>
+                  <p className="educationp-time-period">2015-2018</p>
                 </div>
                 <div className="education-right">
                   <p className="education-subject">
