@@ -8,7 +8,7 @@ export default function Home() {
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>HTML &amp; CSS Resume Template</title>
+      <title>Kristopher Gates - Developer Resume</title>
       {/* Google font  */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
@@ -87,8 +87,10 @@ export default function Home() {
               </ul>
             </div>
             <div className="references">
+              {/*
               <p className="left-title">References</p>
               <div className="refer">
+                
                 <p className="referance-name">No References</p>
                 <p className="referance-profession">Could use a vouch!</p>
                 <ul>
@@ -100,8 +102,9 @@ export default function Home() {
                     <i className="fa fa-envelope" />
                     invalid@donotuse.com
                   </li>
-                </ul>
+                </ul> 
               </div>
+              */}
             </div>
           </div>
         </section>
