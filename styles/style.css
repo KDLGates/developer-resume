@@ -1,3 +1,142 @@
+#root {
+    box-sizing: border-box;
+    height: 90vh;
+  }
+  
+  #trunk {
+    display: flex;
+    flex-flow: wrap column;
+  }
+  
+  /* Set flex column cross sizes for the app/page layout */
+  /* nth-Children are <Header />, <Main />, <Footer /> */
+  #trunk:nth-child(1) {
+    flex: 1;
+  }
+  #trunk:nth-child(2) {
+    flex: 4;
+  }
+  #trunk:nth-child(3) {
+    flex: 1;
+  }
+  
+  
+  .main-layout {
+    display: flex;
+    flex-flow: wrap row;
+    flex: 400px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+  }
+  
+  .contact-info a {
+    color: darkblue;
+  }
+  
+  .contact-info {
+    background-color: darkgreen;
+    color:#DDD;
+    flex-flow: wrap row;
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+  }
+  
+  .contact-info-row {
+    display: flex;
+    padding: 1rem 2rem;
+  }
+  
+  .contact-info-icon {
+    width: 3em;
+  }
+  
+  .contact-info-icon:hover {
+    color: blue;
+  }
+  
+  .main-content {
+    margin: 0 2vw 5vw 2vw;
+    width: 400px;
+    flex: 3 400px;
+  }
+  
+  .main-content h2 {
+    margin-top: 1.3em;
+  }
+  
+  .main-content h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .main-content p {
+    margin-top: 0.5em;
+  }
+  
+  .contact-info {
+    align-items: stretch;
+  }
+  
+  header h1 {
+    font-size: 1.25em;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .app-header {
+    background-color: #282c34;
+    min-height: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .app-footer {
+    background-color: hsla(189, 50%, 50%, 0.329);
+    min-height: 1.2em;
+    display: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .App-link {
+    color: #0c81a1;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 * {
     margin: 0;
     padding: 0;
