@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
@@ -10,12 +10,23 @@ import { faPhone, faEnvelope, faGlobe, faLocationDot } from '@fortawesome/free-s
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 
+import useLocalStorage from 'use-local-storage';
+import { ClientOnly } from 'react-client-only';
+
 export default function Home() {
+  const [theme, setTheme] = useLocalStorage('theme', 'blue');
+
+  const switchTheme = (color) => {
+    setTheme(color);
+  };
+
   return (
-    <div id="trunk">
-    <Header />
-    <Main />
-    <Footer />
-  </div>
+    <ClientOnly>
+      <div id="trunk" data-theme={theme}>
+        <Header theme={theme} switchTheme={switchTheme} />
+        <Main />
+        <Footer />
+      </div>
+    </ClientOnly>
   );
 }

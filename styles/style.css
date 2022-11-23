@@ -1,3 +1,19 @@
+[data-theme='blue'] {
+  --background: #AED6F1;
+}
+[data-theme='red'] {
+  --background: #f1aeae;
+}
+
+/* Workaround for server/client mismatch bug per Reactiflux discussion on 11/22/22 */
+.force-red {
+  background-color: #f1aeae;
+}
+
+#trunk {
+  background-color: var(--background);
+}
+
 #root {
     box-sizing: border-box;
     height: 90vh;
@@ -20,7 +36,12 @@
     flex: 1;
   }
   
-  
+  #theme-picker {
+    position: absolute;
+    right: 0;
+    padding: 2em;
+  }
+
   .main-layout {
     display: flex;
     flex-flow: wrap row;
@@ -82,7 +103,7 @@
   
   header h1 {
     font-size: 1.25em;
-    padding: 3vh;
+    padding: 5vh;
   }
   
   .App {
@@ -144,10 +165,6 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Roboto', sans-serif;
-}
-
-body {
-    background-color: #AED6F1;
 }
 
 .resume-contents {
