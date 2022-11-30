@@ -9,7 +9,7 @@ export default function Header(props) {
                 Kristopher Gates, Aspiring Software Developer
             </h1>
             <form id="theme-picker">
-                    Select color theme: 
+                    Color Theme
                     <label><input type="radio" id="select-red" name="theme" onChange={() => props.switchTheme('red')}
                     checked={props.theme === 'red'} /> Red</label>
                     <label><input type="radio" id="select-blue" name="theme" onChange={() => props.switchTheme('blue')}
