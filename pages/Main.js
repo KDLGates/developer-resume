@@ -62,7 +62,7 @@ export default function Main() {
                 </p>
                 <h2>Relevant Projects</h2>
                 <h3>Hopfield Network at USF Biorobotics Lab</h3>
-                <time>Nov. 2017 - Fall 2017</time>
+                <time>Summer - Fall 2017</time>
                 <p>
                     Learned some fundamental principles of neural networks by developing a membrane potential function for simulating
                     neurons in a custom language (Neural Simulation Language) to model biologically inspired behavior. Modelled a
@@ -86,7 +86,7 @@ export default function Main() {
                 <time>2014-2017</time>
                 <p>
                     <em>summa cum laude</em> (GPA 3.91) School is something I took quite seriously. I loved the academics and feel spoiled and grateful
-                    for the opportunity. CS is a lovely field and automata / theory of computation was my favorite elective.
+                    for the opportunity. CS is a lovely field and Automata / Theory of Computation was my favorite elective.
                 </p>
             </section>
         </main>
