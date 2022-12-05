@@ -36,10 +36,46 @@
   flex: 1;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+header h1 {
+  font-size: 1.25em;
+  padding: 5vh;
+}
+
+header label {
+  display: block;
+}
+
+.app-header {
+  background-color: #282c34;
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 #theme-picker {
-  position: absolute;
   right: 0;
-  padding: 2em;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.contact-info ul li,
+.references ul li {
+  font-size: 12px;
+}
+
+.contact-info ul li i,
+.references ul li i {
+  /* padding-right: 1rem; */
+  font-size: 12px;
 }
 
 .main-layout {
@@ -53,13 +89,13 @@
 }
 
 .contact-info a {
-  color: darkblue;
+  color: #DDDDDD;
 }
 
 .contact-info {
   background-color: darkgreen;
   color: #ddd;
-  flex-flow: wrap row;
+  flex-flow: wrap column;
   align-items: flex-start;
   display: flex;
   flex: 1;
@@ -67,7 +103,7 @@
 
 .contact-info-row {
   display: flex;
-  padding: 1rem 2rem;
+  padding: 2rem;
 }
 
 .contact-info-icon {
@@ -101,20 +137,6 @@
   align-items: stretch;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-}
-
-header h1 {
-  font-size: 1.25em;
-  padding: 5vh;
-}
-
-header label {
-  display: block;
-}
-
 .App {
   text-align: center;
 }
@@ -130,15 +152,7 @@ header label {
   }
 }
 
-.app-header {
-  background-color: #282c34;
-  min-height: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .app-footer {
   background-color: hsla(189, 50%, 50%, 0.329);
@@ -232,7 +246,7 @@ header label {
 
 /* .contact-info { border-bottom: 2px solid #1B2631; } */
 .left-title {
-  color: #d6dbdf;
+  color: #ffffff;
   font-size: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -411,17 +425,6 @@ header label {
 
   .right-title {
     font-size: 18px;
-  }
-
-  .contact-info ul li,
-  .references ul li {
-    font-size: 12px;
-  }
-
-  .contact-info ul li i,
-  .references ul li i {
-    /* padding-right: 1rem; */
-    font-size: 12px;
   }
 
   .skills ul li p {
