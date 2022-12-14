@@ -84,6 +84,18 @@ header label {
   flex: 400px;
 }
 
+/* Only underline contact links on hover */
+.contact-info a {
+  text-decoration: none;
+}
+
+
+.contact-info-row:hover,
+.contact-info-row:focus {
+  text-decoration: underline;
+  color: yellow;
+}
+
 .contact-info ul {
   list-style: none;
 }
@@ -92,13 +104,21 @@ header label {
   color: #DDDDDD;
 }
 
+.contact-info a:hover {
+  color: yellow;
+}
+
 .contact-info {
   background-color: darkgreen;
   color: #ddd;
   flex-flow: wrap column;
-  align-items: flex-start;
+  align-items: stretch;
   display: flex;
   flex: 1;
+}
+/* TODO: Why flex-start then stretch? Was this from the template? */
+.contact-info {
+  align-items: stretch;
 }
 
 .contact-info-row {
@@ -112,6 +132,45 @@ header label {
 
 .contact-info-icon:hover {
   color: blue;
+}
+
+
+
+/* Flexbox classes and related layout */
+.flexcontainer {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.flexcols {
+  flex-direction: column;
+}
+
+.spacearound {
+  justify-content: space-around;
+}
+
+.flexcontainer > div:first-child {
+  flex: 0 10rem;
+}
+
+.flexcontainer > div:nth-child(2) {
+  flex: 1;
+}
+
+h3 {
+  display: block;
+}
+
+
+/* Main resume content, text and non-layout */
+time {
+  vertical-align: middle;
+  text-align: inherit;
+}
+
+.main-content > div {
+  display: block;
 }
 
 .main-content {
@@ -133,8 +192,8 @@ header label {
   margin-top: 0.5em;
 }
 
-.contact-info {
-  align-items: stretch;
+.heading__relevantprojects {
+  margin-top: 2rem;
 }
 
 .App {

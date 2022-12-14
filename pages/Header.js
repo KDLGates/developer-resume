@@ -1,12 +1,11 @@
 import React from 'react'
-import useLocalStorage from 'use-local-storage';
 
 export default function Header(props) {
 
     return (
         <header className="app-header">
             <h1>
-                Kristopher Gates, Aspiring Software Developer
+                Kristopher Gates, Software Developer
             </h1>
             <form id="theme-picker">
                     Color Theme
