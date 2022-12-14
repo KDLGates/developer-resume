@@ -16,7 +16,7 @@ export default function Header(props) {
                         Color Theme
                         <label><input type="radio" id="select-blue" name="theme" onChange={() => props.switchTheme('blue')}
                         checked={props.theme === 'blue'} /> Blue</label>
-                         <label><input type="radio" id="select-blue" name="theme" onChange={() => props.switchTheme('Offwhite')}
+                         <label><input type="radio" id="select-offwhite" name="theme" onChange={() => props.switchTheme('offwhite')}
                         checked={props.theme === 'offwhite'} /> Light</label>
                 </form>
             </div>
