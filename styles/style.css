@@ -1,8 +1,14 @@
 [data-theme="blue"] {
   --background: #aed6f1;
+  --color: rgb(4, 3, 86);
 }
-[data-theme="red"] {
-  --background: #f1aeae;
+[data-theme="offwhite"] {
+  --background: #ddddd;
+  --color: #333;
+}
+
+body {
+  color: var(--color);
 }
 
 /* Workaround for server/client mismatch bug per Reactiflux discussion on 11/22/22 */
@@ -113,6 +119,10 @@ header label {
   color: yellow;
 }
 
+.list__skills {
+  color: var(--color) !important;
+}
+
 .contact-info ul {
   list-style: none;
 }
@@ -132,8 +142,8 @@ header label {
 }
 
 .contact-info {
-  background-color: darkgreen;
-  color: #ddd;
+  background-color: rgba(204, 204, 204, 0.452);
+  color: #333;
   flex-flow: wrap column;
   align-items: stretch;
   display: flex;
@@ -146,7 +156,7 @@ header label {
 
 .contact-info-row {
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .contact-info-row:hover,
@@ -169,20 +179,40 @@ header label {
   color: blue;
 }
 
+.heading__experience {
+  font-weight: 600;
+  font-style: italic;
+}
 
+.heading__category {
+  font-weight: bold;
+}
 
 /* Flexbox classes and related layout */
 .flexcontainer {
   display: flex;
-  margin-top: 2rem;
+  text-align: left;
 }
 
-.flexcols {
+.body__experience:not(:first-child) {
+  padding-top: 1rem;
+  border-top: 1px solid #DDDDDD;
+}
+
+.flexcol {
   flex-direction: column;
+}
+
+.flexwrap {
+  flex-wrap: wrap;
 }
 
 .spacearound {
   justify-content: space-around;
+}
+
+.spacebetween {
+  justify-content: space-between;
 }
 
 .flexcontainer > div:first-child {
@@ -206,6 +236,8 @@ time {
 
 .main-content > div {
   display: block;
+  border-top: 1px solid #DDDDDD;
+  padding: 1rem;
 }
 
 .main-content {
@@ -232,9 +264,6 @@ time {
   margin-top: 0;
 }
 
-.heading__relevantprojects {
-  margin-top: 2rem;
-}
 
 .App {
   text-align: center;
@@ -364,7 +393,6 @@ time {
   padding: 0.4rem 0;
   display: flex;
   align-items: center;
-  color: #d6dbdfaf;
   letter-spacing: 1px;
   font-size: 18px;
 }
