@@ -4,9 +4,10 @@ export default function Header(props) {
 
     return (
         <header className="app-header">
-            <h1>
-                Kristopher Gates, Software Developer
-            </h1>
+            <div className="heading__title">
+                <h1>Kristopher Gates</h1>
+                <h2>Software Developer</h2>
+            </div>
             <div className="flexcols spacearound">
                 <a href="./downloads/Kristopher-Gates-Resume.pdf" download>
                     <button id="downloadbutton">Download Resume PDF</button>
