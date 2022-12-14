@@ -126,8 +126,32 @@ header label {
   width: 3em;
 }
 
+.flexcontainer {
+  display: flex;
+}
+
+.spaceapart {
+  justify-content: space-around;
+}
+
+h3 {
+  display: block;
+}
+
+.flexcontainer > div:first-child {
+  flex: 0 10rem;
+}
+
+.flexcontainer > div:nth-child(2) {
+  flex: 1;
+}
+
 .contact-info-icon:hover {
   color: blue;
+}
+
+.main-content > div {
+  display: block;
 }
 
 .main-content {
@@ -151,6 +175,11 @@ header label {
 
 .contact-info {
   align-items: stretch;
+}
+
+/* contact-info-row button restyling */
+.contact-info-row {
+  
 }
 
 .App {
