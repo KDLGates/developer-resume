@@ -38,17 +38,7 @@
 
 header {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
-}
-
-header h1 {
-  font-size: 1.25em;
-  padding: 5vh;
-}
-
-header label {
-  display: block;
 }
 
 .app-header {
@@ -56,10 +46,31 @@ header label {
   min-height: 3em;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.heading__title {
+  min-width: 512px;
+}
+
+header h1 {
+  font-size: 1.5em;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+header h2 {
+  font-size: 1.1em;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+header label {
+  display: block;
+}
+
 
 #theme-picker {
   right: 0;
