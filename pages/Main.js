@@ -38,7 +38,7 @@ export default function Main() {
                         <address><a href="https://www.google.com/maps/place/5211+Oak+Charter+Ct,+Tampa,+FL+33617/">5211 Oak Charter Ct.,<br />Temple Terrace, FL, 33617</a></address>
                     </div>
                 </div>
-                <div className="contact-info-row">
+                <div className="contact-info-row nohover">
                     <div>
                         <p><strong>Skills</strong></p>
                         <ul>
@@ -55,7 +55,7 @@ export default function Main() {
             <section className="main-content">
                 <div>
                     <div className="flexcontainer">                        
-                        <div>
+                        <div className="heading__aboutme">
                             <h2>About Me</h2>
                         </div>
                         <div>
