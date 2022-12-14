@@ -68,11 +68,11 @@ export default function Main() {
                 </div>
                 <div>
                     <div className="flexcontainer">
-                        <div>
+                        <div className="heading__relevantprojects">
                             <h2>Relevant Projects</h2>
                         </div>
                         <div>
-                            <div className="flexcontainer spaceapart">
+                            <div className="flexcontainer spacearound">
                                 <h3>Hopfield Network at USF Biorobotics Lab</h3>
                                 <time>Summer - Fall 2017</time>
                             </div>
@@ -82,7 +82,7 @@ export default function Main() {
                                 Hopfield Network for a basic Optical Character Recognition task (memorizing and recalling letters). Worked as part
                                 of a team with a graduate mentor for program credit to help guide me as a beginner in the field.
                             </p>
-                                <div className="flexcontainer spaceapart">
+                                <div className="flexcontainer spacearound">
                                     <h3>Statistical Tracking and Planning</h3>
                                     <time>Jan. 2010 - Oct. 2012</time>
                                 </div>
@@ -90,7 +90,7 @@ export default function Main() {
                                 Created monthly reports and visualizations as a part of my help desk employment, tracking the history of laptop replacements
                                 for a Fortune 500 company, also used in forecasting to maintain a support contract.
                             </p>
-                            <div className="flexcontainer spaceapart">
+                            <div className="flexcontainer spacearound">
                                 <h3>Expense Report Development</h3>
                                 <time>Apr. - Jun. 2011</time>
                             </div>
@@ -106,12 +106,16 @@ export default function Main() {
                         <div>
                             <h2>Education</h2>
                         </div>
-                        <h3>B.S. in Computer Science</h3>
-                        <time>2014-2017</time>
-                        <p>
-                            <em>summa cum laude</em> (GPA 3.91) School is something I took quite seriously. I loved the academics and feel spoiled and grateful
-                            for the opportunity. CS is a lovely field and Automata / Theory of Computation was my favorite elective.
-                        </p>
+                        <div>
+                            <div className="flexcontainer spacearound">
+                                <h3>B.S. in Computer Science</h3>
+                                <time>2014-2017</time>
+                            </div>
+                            <p>
+                                <em>summa cum laude</em> (GPA 3.91) School is something I took quite seriously. I loved the academics and feel spoiled and grateful
+                                for the opportunity. CS is a lovely field and Automata / Theory of Computation was my favorite elective.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
