@@ -39,7 +39,7 @@ export default function Main() {
                     </div>
                 </div>
                 <div className="contact-info-row nohover">
-                    <div>
+                    <div className="list__skills">
                         <p><strong>Skills</strong></p>
                         <ul>
                             <li>Python</li>
@@ -47,16 +47,16 @@ export default function Main() {
                             <li>JavaScript, React</li>
                             <li>HTML & CSS</li>
                             <li>Git & GitHub</li>
-                            <li>Linux, Bash/Shell</li>
+                            <li>Windows, Linux, Bash/Shell</li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section className="main-content">
                 <div>
-                    <div className="flexcontainer">                        
+                    <div className="flexcontainer">
                         <div className="heading__aboutme">
-                            <h2>About Me</h2>
+                            <span className="heading__category">About Me</span>
                         </div>
                         <div>
                             A lifelong technologist and lover of Computer Science, at last working hard on breaking into development.
@@ -69,46 +69,54 @@ export default function Main() {
                 <div>
                     <div className="flexcontainer">
                         <div className="heading__relevantprojects">
-                            <h2>Relevant Projects</h2>
+                            <span className='heading__category'>Relevant Projects</span>
                         </div>
                         <div>
-                            <div className="flexcontainer spacearound">
-                                <h3>Hopfield Network at USF Biorobotics Lab</h3>
-                                <time>Summer - Fall 2017</time>
-                            </div>
-                            <p>
-                                Learned some fundamental principles of neural networks by developing a membrane potential function for simulating
-                                neurons in a custom language (Neural Simulation Language) to model biologically inspired behavior. Modelled a
-                                Hopfield Network for a basic Optical Character Recognition task (memorizing and recalling letters). Worked as part
-                                of a team with a graduate mentor for program credit to help guide me as a beginner in the field.
-                            </p>
-                                <div className="flexcontainer spacearound">
-                                    <h3>Statistical Tracking and Planning</h3>
-                                    <time>Jan. 2010 - Oct. 2012</time>
+                            <div className='flexcontaine flexcolr'>
+                                <div className='body__experience'>
+                                    <div className="flexcontainer spacebetween">
+                                        <span className="heading__experience">Hopfield Network at USF Biorobotics Lab</span>
+                                        <time>Summer - Fall 2017</time>
+                                    </div>
+                                    <div>
+                                        Learned some fundamental principles of neural networks by developing a membrane potential function for simulating
+                                        neurons in a custom language (Neural Simulation Language) to model biologically inspired behavior. Modelled a
+                                        Hopfield Network for a basic Optical Character Recognition task (memorizing and recalling letters). Worked as part
+                                        of a team with a graduate mentor for program credit to help guide me as a beginner in the field.
+                                    </div>
                                 </div>
-                            <p>
-                                Created monthly reports and visualizations as a part of my help desk employment, tracking the history of laptop replacements
-                                for a Fortune 500 company, also used in forecasting to maintain a support contract.
-                            </p>
-                            <div className="flexcontainer spacearound">
-                                <h3>Expense Report Development</h3>
-                                <time>Apr. - Jun. 2011</time>
+                                <div className='body__experience'>
+                                    <div className="flexcontainer spacebetween">
+                                        <span className="heading__experience">Statistical Tracking and Planning</span>
+                                        <time>Jan. 2010 - Oct. 2012</time>
+                                    </div>
+                                    <div>
+                                        Created monthly reports and visualizations as a part of my help desk employment, tracking the history of laptop replacements
+                                        for a Fortune 500 company, also used in forecasting to maintain a support contract.
+                                    </div>
+                                </div>
+                                <div className='body__experience'>
+                                    <div className="flexcontainer spacebetween">
+                                        <span className="heading__experience">Expense Report Development</span>
+                                        <time>Apr. - Jun. 2011</time>
+                                    </div>
+                                    <div>
+                                        Participated on a client driven project which developed and deployed an additional module to facilitate the expense reports
+                                        and approvals of 1,100 salespeople and their managers.
+                                    </div>
+                                </div>
                             </div>
-                            <p>
-                                Participated on a client driven project which developed and deployed an additional module to facilitate the expense reports
-                                and approvals of 1,100 salespeople and their managers.
-                            </p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div className="flexcontainer">
                         <div>
-                            <h2>Education</h2>
+                            <span className="heading__category">Education</span>
                         </div>
                         <div>
-                            <div className="flexcontainer spacearound">
-                                <h3>B.S. in Computer Science</h3>
+                            <div className="flexcontainer spacebetween">
+                                <span>B.S. in Computer Science</span>
                                 <time>2014-2017</time>
                             </div>
                             <p>
