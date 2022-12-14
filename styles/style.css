@@ -64,7 +64,13 @@ header label {
 #theme-picker {
   right: 0;
   padding: 1em;
+  padding-top: 0.25em;
   font-size: 20px;
+}
+
+#downloadbutton {
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
 }
 
 .contact-info ul li,
@@ -85,7 +91,7 @@ header label {
 }
 
 /* Only underline contact links on hover */
-.contact-info a {
+.contact-info-row a {
   text-decoration: none;
 }
 
@@ -101,7 +107,13 @@ header label {
 }
 
 .contact-info a {
-  color: #DDDDDD;
+  color: inherit;
+}
+
+.nohover:hover,
+.nohover:focus {
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .contact-info a:hover {
@@ -124,6 +136,18 @@ header label {
 .contact-info-row {
   display: flex;
   padding: 2rem;
+}
+
+.contact-info-row:hover,
+.contact-info-row:focus {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.contact-info-row a:hover,
+.contact-info-row a:focus {
+  color: yellow;
+  text-decoration: underline;
 }
 
 .contact-info-icon {
@@ -165,7 +189,7 @@ h3 {
 
 /* Main resume content, text and non-layout */
 time {
-  vertical-align: middle;
+  vertical-align: baseline;
   text-align: inherit;
 }
 
@@ -190,6 +214,11 @@ time {
 
 .main-content p {
   margin-top: 0.5em;
+}
+
+/* Zero margin-top for topmost heading */
+.heading__aboutme h2 {
+  margin-top: 0;
 }
 
 .heading__relevantprojects {
