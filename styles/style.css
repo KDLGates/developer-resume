@@ -84,12 +84,28 @@ header label {
   flex: 400px;
 }
 
+/* Only underline contact links on hover */
+.contact-info a {
+  text-decoration: none;
+}
+
+
+.contact-info-row:hover,
+.contact-info-row:focus {
+  text-decoration: underline;
+  color: yellow;
+} */
+
 .contact-info ul {
   list-style: none;
 }
 
 .contact-info a {
   color: #DDDDDD;
+}
+
+.contact-info a:hover {
+  color: yellow;
 }
 
 .contact-info {
