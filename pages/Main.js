@@ -48,6 +48,8 @@ export default function Main() {
                             <li>HTML & CSS</li>
                             <li>Git & GitHub</li>
                             <li>Windows, Linux, Bash/Shell</li>
+                            <li>VirtualBox & Virtual Machines</li>
+                            <li>Postgres / PostgreSQL</li>
                         </ul>
                     </div>
                 </div>
@@ -116,7 +118,7 @@ export default function Main() {
                         </div>
                         <div>
                             <div className="flexcontainer spacebetween">
-                                <span>B.S. in Computer Science</span>
+                                <span className="heading__experience">B.S. in Computer Science, University of South Florida</span>
                                 <time>2014-2017</time>
                             </div>
                             <p>
