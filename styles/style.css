@@ -77,7 +77,6 @@ header label {
   display: block;
 }
 
-
 #theme-picker {
   right: 0;
   padding: 1em;
@@ -111,7 +110,6 @@ header label {
 .contact-info-row a {
   text-decoration: none;
 }
-
 
 .contact-info-row:hover,
 .contact-info-row:focus {
@@ -149,7 +147,7 @@ header label {
   display: flex;
   flex: 1;
 }
-/* TODO: Why flex-start then stretch? Was this from the template? */
+
 .contact-info {
   align-items: stretch;
 }
@@ -196,7 +194,7 @@ header label {
 
 .body__experience:not(:first-child) {
   padding-top: 1rem;
-  border-top: 1px solid #DDDDDD;
+  border-top: 1px solid #dddddd;
 }
 
 .flexcol {
@@ -227,7 +225,6 @@ h3 {
   display: block;
 }
 
-
 /* Main resume content, text and non-layout */
 time {
   vertical-align: baseline;
@@ -236,7 +233,7 @@ time {
 
 .main-content > div {
   display: block;
-  border-top: 1px solid #DDDDDD;
+  border-top: 1px solid #dddddd;
   padding: 1rem;
 }
 
@@ -264,7 +261,6 @@ time {
   margin-top: 0;
 }
 
-
 .App {
   text-align: center;
 }
@@ -280,8 +276,6 @@ time {
   }
 }
 
-
-
 .app-footer {
   background-color: hsla(189, 50%, 50%, 0.329);
   min-height: 1.2em;
@@ -291,7 +285,6 @@ time {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  /* position: fixed; */
   bottom: 0;
   width: 100%;
 }
@@ -331,12 +324,6 @@ time {
   background-color: #34495e;
 }
 
-.right-section {
-  grid-column: span 5;
-  height: 100%;
-  background-color: #d6dbdf;
-}
-
 .left-section-contents {
   padding: 2rem 2rem;
 }
@@ -372,7 +359,6 @@ time {
   padding-bottom: 1rem;
 }
 
-/* .contact-info { border-bottom: 2px solid #1B2631; } */
 .left-title {
   color: #ffffff;
   font-size: 20px;
@@ -415,39 +401,6 @@ time {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-}
-
-.referance-name {
-  padding-top: 1.5rem;
-  padding-bottom: 0.4rem;
-  font-size: 18px;
-  color: #f9e79f;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.referance-profession {
-  font-size: 16px;
-  color: #d6dbdfaf;
-  letter-spacing: 1px;
-  /* text-transform: uppercase; */
-  padding-bottom: 0.4rem;
-}
-
-.right-section-contents {
-  padding: 2rem 2rem;
-}
-
-.right-title {
-  color: #34495e;
-  font-size: 40px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  position: relative;
 }
 
 .gap {
@@ -520,10 +473,6 @@ time {
   .left-section {
     grid-column: span 3;
   }
-
-  .right-section {
-    grid-column: span 4;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -547,10 +496,6 @@ time {
   }
 
   .left-title {
-    font-size: 18px;
-  }
-
-  .right-title {
     font-size: 18px;
   }
 
