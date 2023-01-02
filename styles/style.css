@@ -178,7 +178,7 @@ header label {
 
 .contact-info-row:hover,
 .contact-info-row:focus {
-  color: #444;
+  color: #222;
   text-decoration: underline;
 }
 
