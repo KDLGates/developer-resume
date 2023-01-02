@@ -124,6 +124,7 @@ header label {
   display: flex;
   flex-flow: wrap row;
   flex: 400px;
+  background-color: var(--background);
 }
 
 /* Only underline contact links on hover */
