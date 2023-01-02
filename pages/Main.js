@@ -35,7 +35,7 @@ export default function Main() {
                 <div className="contact-info-row">
                     <FontAwesomeIcon icon={faLocationDot} className="contact-info-icon" />
                     <div>
-                        <address><a href="https://www.google.com/maps/place/5211+Oak+Charter+Ct,+Tampa,+FL+33617/">5211 Oak Charter Ct.,<br />Temple Terrace, FL, 33617</a></address>
+                        <address><a target="_blank" href="https://www.google.com/maps/place/5211+Oak+Charter+Ct,+Tampa,+FL+33617/" rel="noreferrer">5211 Oak Charter Ct.,<br />Temple Terrace, FL, 33617</a></address>
                     </div>
                 </div>
                 <div className="contact-info-row nohover">
