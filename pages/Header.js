@@ -14,10 +14,10 @@ export default function Header(props) {
                 </a>
                 <form id="theme-picker">
                         Color Theme
+                        <label><input type="radio" id="select-offwhite" name="theme" onChange={() => props.switchTheme('offwhite')}
+                       checked={props.theme === 'offwhite'} /> Light</label>
                         <label><input type="radio" id="select-blue" name="theme" onChange={() => props.switchTheme('blue')}
                         checked={props.theme === 'blue'} /> Blue</label>
-                         <label><input type="radio" id="select-offwhite" name="theme" onChange={() => props.switchTheme('offwhite')}
-                        checked={props.theme === 'offwhite'} /> Light</label>
                 </form>
             </div>
         </header>
