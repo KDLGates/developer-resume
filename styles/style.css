@@ -4,10 +4,6 @@
   box-sizing: border-box;
   list-style: none;
   font-family: "Lato", sans-serif, serif;
-  /* font-family: serif; */
-  /* font-family: sans-serif; */
-  /* font-family: "EB Garamond", "Papyrus", serif; */
-  /* font-family: "Century Gothic", "Avant Garde Gothic", "Avant Garde","URW Gothic L", helvetica, sans-serif; */
 }
 
 [data-theme="blue"] {
@@ -17,6 +13,10 @@
 [data-theme="offwhite"] {
   --background: #ddddd;
   --color: #333;
+}
+
+#theme-picker label {
+  cursor: pointer;
 }
 
 body {
@@ -123,10 +123,21 @@ header label {
   text-decoration: none;
 }
 
+.contact-info-row {
+  cursor: pointer;
+}
+
 .contact-info-row:hover,
 .contact-info-row:focus {
   text-decoration: underline;
-  color: yellow;
+  color: #444;
+  background-color: #999;
+}
+
+.skills-info-row {
+  display: flex;
+  flex-flow: wrap row;
+  padding: 1rem;
 }
 
 .list__skills {
@@ -145,10 +156,6 @@ header label {
 .nohover:focus {
   text-decoration: none !important;
   color: white !important;
-}
-
-.contact-info a:hover {
-  color: yellow;
 }
 
 .contact-info {
@@ -171,22 +178,12 @@ header label {
 
 .contact-info-row:hover,
 .contact-info-row:focus {
-  color: yellow;
-  text-decoration: underline;
-}
-
-.contact-info-row a:hover,
-.contact-info-row a:focus {
-  color: yellow;
+  color: #444;
   text-decoration: underline;
 }
 
 .contact-info-icon {
   width: 3em;
-}
-
-.contact-info-icon:hover {
-  color: blue;
 }
 
 .heading__experience {
