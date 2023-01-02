@@ -8,7 +8,7 @@ export default function Header(props) {
                 <h1>Kristopher Gates</h1>
                 <h2>Software Developer</h2>
             </div>
-            <div className="flexcols spacearound">
+            <div className="flexcols spacearound heading__controls">
                 <a href="./downloads/Kristopher-Gates-Resume.pdf" download>
                     <button id="downloadbutton">Download Resume PDF</button>
                 </a>
