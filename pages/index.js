@@ -1,26 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
-import useLocalStorage from "use-local-storage";
 import "lato-font";
 
-import { ClientOnly } from "react-client-only";
-
 export default function Home() {
-  const [theme, setTheme] = useLocalStorage("theme", "offwhite");
+  const [theme, setTheme] = useState("offwhite");
 
-  const switchTheme = (color) => {
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (theme) {
+      setTheme(theme);
+    }
+  }, []);
+
+  function switchTheme(color) {
     setTheme(color);
-  };
+    localStorage.setItem("theme", color);
+  }
 
   return (
-    <ClientOnly>
-      <div id="trunk" data-theme={theme}>
-        <Header theme={theme} switchTheme={switchTheme} />
-        <Main />
-        <Footer />
-      </div>
-    </ClientOnly>
+    <div id="trunk" data-theme={theme}>
+      <Header theme={theme} switchTheme={switchTheme} />
+      <Main />
+      <Footer />
+    </div>
   );
 }
