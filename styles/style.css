@@ -9,12 +9,18 @@
 [data-theme="blue"] {
   --background: #aed6f1;
   --color: rgb(4, 3, 86);
+  --btnbackground: #aed6f1;
 }
 [data-theme="offwhite"] {
-  --background: #ddddd;
+  --background: #dddddd;
   --color: #333;
+  --btnbackground: #dddddd;
 }
 
+#theme-picker > span {
+  font-size: 0.9em;
+  color: #21638f;
+}
 #theme-picker label {
   cursor: pointer;
 }
@@ -67,10 +73,19 @@ header {
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 1em;
 }
 
 .heading__title {
   min-width: 512px;
+}
+.heading__title > h1,
+heading__title > h2 :hover {
+  font-weight: 700;
+}
+
+.heading__title > h2 {
+  color: #21638f;
 }
 
 .heading__controls {
@@ -104,9 +119,20 @@ header label {
   font-size: 20px;
 }
 
-#downloadbutton {
-  padding: 0.25rem 0.75rem;
+#download-button-container {
+  margin: 1em auto;
+  text-align: center;
+}
+#download-button-container button {
+  background-color: var(--btnbackground);
+  padding: 0.5rem 1rem;
   border-radius: 8px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#download-button-container button:hover {
+  background-color: #69a4df;
 }
 
 .contact-info ul li,
@@ -134,6 +160,7 @@ header label {
 
 .contact-info-row {
   cursor: pointer;
+  transition: 2s;
 }
 
 .contact-info-row:hover,
