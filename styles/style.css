@@ -287,7 +287,6 @@ time {
 
 .main-content {
   margin: 0 2vw 5vw 2vw;
-  width: 400px;
   flex: 3 400px;
 }
 
@@ -506,10 +505,6 @@ time {
     flex-direction: column;
     display: block;
     height: 2048px;
-  }
-
-  .main-content {
-    width: unset;
   }
 
   .main-content div {
