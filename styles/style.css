@@ -515,6 +515,18 @@ time {
     justify-content: space-around;
   }
 
+  .contact-info-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skills-info-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .contact-info-list {
     order: 1;
   }
