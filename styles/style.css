@@ -20,8 +20,11 @@
 #theme-picker > span {
   font-size: 0.9em;
   color: #21638f;
+  display: inline-block;
+  min-width: 125px;
 }
 #theme-picker label {
+  min-width: 100px;
   cursor: pointer;
 }
 
@@ -499,6 +502,10 @@ time {
 
 /* Media queries */
 @media screen and (max-width: 780px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
   .experience-contents,
   .education-contents,
   .awards-contents {
