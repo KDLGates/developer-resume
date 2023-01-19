@@ -12,54 +12,56 @@ export default function Main() {
   return (
     <main className="main-layout">
       <section className="contact-info">
-        <div className="contact-info-row">
-          <FontAwesomeIcon icon={faPhone} className="contact-info-icon" />
-          <div>
-            <address>813-421-2341</address>
+        <div>
+          <div className="contact-info-row">
+            <FontAwesomeIcon icon={faPhone} className="contact-info-icon" />
+            <div>
+              <address>813-421-2341</address>
+            </div>
           </div>
-        </div>
-        <div className="contact-info-row">
-          <FontAwesomeIcon icon={faEnvelope} className="contact-info-icon" />
-          <div>
-            <address>kdlgates@kdlgates.com</address>
+          <div className="contact-info-row">
+            <FontAwesomeIcon icon={faEnvelope} className="contact-info-icon" />
+            <div>
+              <address>kdlgates@kdlgates.com</address>
+            </div>
           </div>
-        </div>
-        <div className="contact-info-row">
-          <FontAwesomeIcon icon={faGlobe} className="contact-info-icon" />
-          <div>
-            <address>
-              <a href="https://www.kdlgates.com">kdlgates.com</a>
-            </address>
+          <div className="contact-info-row">
+            <FontAwesomeIcon icon={faGlobe} className="contact-info-icon" />
+            <div>
+              <address>
+                <a href="https://www.kdlgates.com">kdlgates.com</a>
+              </address>
+            </div>
           </div>
-        </div>
-        <div className="contact-info-row">
-          <FontAwesomeIcon icon={faGithub} className="contact-info-icon" />
-          <div>
-            <address>
-              <a href="https://github.com/kdlgates">github.com/kdlgates</a>
-            </address>
+          <div className="contact-info-row">
+            <FontAwesomeIcon icon={faGithub} className="contact-info-icon" />
+            <div>
+              <address>
+                <a href="https://github.com/kdlgates">github.com/kdlgates</a>
+              </address>
+            </div>
           </div>
-        </div>
-        <div className="contact-info-row">
-          <FontAwesomeIcon icon={faLocationDot} className="contact-info-icon" />
-          <div>
-            <address>
-              <a
-                target="_blank"
-                href="https://www.google.com/maps/place/5211+Oak+Charter+Ct,+Tampa,+FL+33617/"
-                rel="noreferrer"
-              >
-                5211 Oak Charter Ct.,
-                <br />
-                Temple Terrace, FL, 33617
-              </a>
-            </address>
+          <div className="contact-info-row">
+            <FontAwesomeIcon icon={faLocationDot} className="contact-info-icon" />
+            <div>
+              <address>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/place/5211+Oak+Charter+Ct,+Tampa,+FL+33617/"
+                  rel="noreferrer"
+                >
+                  5211 Oak Charter Ct.,
+                  <br />
+                  Temple Terrace, FL, 33617
+                </a>
+              </address>
+            </div>
           </div>
-        </div>
-        <div id="download-button-container">
-          <a href="./downloads/Kristopher-Gates-Resume.pdf" download>
-            <button id="downloadbutton">Download Resume PDF</button>
-          </a>
+          <div id="download-button-container">
+            <a href="./downloads/Kristopher-Gates-Resume.pdf" download>
+              <button id="downloadbutton">Download Resume PDF</button>
+            </a>
+          </div>
         </div>
         <div className="skills-info-row nohover">
           <div className="list__skills">
