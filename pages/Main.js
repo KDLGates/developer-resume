@@ -12,7 +12,7 @@ export default function Main() {
   return (
     <main className="main-layout">
       <section className="contact-info">
-        <div>
+        <div className="contact-info-group">
           <div className="contact-info-row">
             <FontAwesomeIcon icon={faPhone} className="contact-info-icon" />
             <div>
@@ -42,7 +42,10 @@ export default function Main() {
             </div>
           </div>
           <div className="contact-info-row">
-            <FontAwesomeIcon icon={faLocationDot} className="contact-info-icon" />
+            <FontAwesomeIcon
+              icon={faLocationDot}
+              className="contact-info-icon"
+            />
             <div>
               <address>
                 <a
