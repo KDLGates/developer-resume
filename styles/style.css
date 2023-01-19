@@ -505,6 +505,7 @@ time {
   .main-layout {
     flex-direction: column;
     display: block;
+    height: 2048px;
   }
 
   .main-content {
