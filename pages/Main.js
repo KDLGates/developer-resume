@@ -78,7 +78,7 @@ export default function Main() {
               <li>HTML & CSS</li>
               <li>Git & GitHub</li>
               <li>Windows, Linux, Bash/Shell</li>
-              <li>VirtualBox & Virtual Machines</li>
+              {/* <li>Servers & Virtual Machines</li> */}
               <li>Postgres / PostgreSQL</li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ export default function Main() {
             <div className="heading__aboutme">
               <span className="heading__category">About Me</span>
             </div>
-            <div>
+            <div className="main-text">
               A lifelong technologist and lover of Computer Science, at last
               working hard on breaking into development. My current focus is on
               improving my web literacy via the MERN stack, and fostering my
@@ -113,7 +113,7 @@ export default function Main() {
                     </span>
                     <time>Summer - Fall 2017</time>
                   </div>
-                  <div>
+                  <div className="main-text">
                     Learned some fundamental principles of neural networks by
                     developing a membrane potential function for simulating
                     neurons in a custom language (Neural Simulation Language) to
@@ -131,7 +131,7 @@ export default function Main() {
                     </span>
                     <time>Jan. 2010 - Oct. 2012</time>
                   </div>
-                  <div>
+                  <div className="main-text">
                     Created monthly reports and visualizations as a part of my
                     help desk employment, tracking the history of laptop
                     replacements for a Fortune 500 company, also used in
@@ -145,7 +145,7 @@ export default function Main() {
                     </span>
                     <time>Apr. - Jun. 2011</time>
                   </div>
-                  <div>
+                  <div className="main-text">
                     Participated on a client driven project which developed and
                     deployed an additional module to facilitate the expense
                     reports and approvals of 1,100 salespeople and their

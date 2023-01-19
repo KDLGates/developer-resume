@@ -130,7 +130,7 @@ header label {
   background-color: var(--btnbackground);
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  transition: 1s;
+  transition: background-color 1s;
   cursor: pointer;
 }
 
@@ -163,7 +163,7 @@ header label {
 
 .contact-info-row {
   cursor: pointer;
-  transition: 2s;
+  transition: background-color 2s;
 }
 
 .contact-info-row:hover,
@@ -504,27 +504,48 @@ time {
 @media screen and (max-width: 780px) {
   .main-layout {
     flex-direction: column;
+    display: block;
   }
 
   .main-content {
     width: unset;
   }
 
+  .main-content div {
+    font-size: 1.5rem;
+  }
+
+  .main-text {
+    padding-top: 1.25rem;
+  }
+
   .contact-info {
     flex-direction: row;
     justify-content: space-around;
+    font-size: 1.25em;
   }
 
   .contact-info-group {
+    padding-top: 50px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .contact-info-row {
+    padding-top: 0.25rem;
   }
 
   .skills-info-row {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .contact-info ul li,
+  .references ul li {
+    font-size: 1em;
   }
 
   .contact-info-list {
