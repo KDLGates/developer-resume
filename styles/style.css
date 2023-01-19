@@ -506,6 +506,19 @@ time {
     flex-direction: column;
   }
 
+  .main-content {
+    width: unset;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .contact-info-list {
+    order: 1;
+  }
+
   .experience-contents,
   .education-contents,
   .awards-contents {
